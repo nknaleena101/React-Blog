@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card/Card";
 
 function PostList(props) {
+    
   return (
     <>
       {props.posts.map((post) => (

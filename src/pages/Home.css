@@ -4,10 +4,27 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    outline: none;
 }
 
 .hero-title{
     font-size: 64px;
     font-style: italic;
     text-align: center;
+    margin-bottom: 56px;
+}
+
+.hero-link{
+    margin-top: 56px;
+}
+
+.hero-link a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    font-size: 16px;
+    gap: 8px;
 }
