@@ -9,7 +9,7 @@ function Card(props) {
       <div className="card-top">
         <img className="card-top__img" src={props.image} alt={props.id} />
         <div className="card-top__btn">
-            <Link to='/BlogPosts'><ArrowUpRight /></Link>
+            <Link to={`/${props.id}/post`}><ArrowUpRight /></Link>
         </div>
       </div>
       <div className="card-bottom">
