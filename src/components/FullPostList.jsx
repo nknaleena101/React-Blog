@@ -1,19 +1,21 @@
 import React from "react";
 import Blogposts from "../pages/BlogPosts";
+import BLOG_POSTS from "./BLOG_POSTS";
+BLOG_POSTS
 
 function FullPostList(props) {
   return (
     <>
-      {props.pages.map((page) => (
+      {BLOG_POSTS.map(blog => (
         <Blogposts
-          key={page.pid}
-          id={page.id}
-          image={page.image}
-          title={page.title}
-          description={page.description}
-          category={page.category}
-          publishDate={page.publishDate}
-          blog={page.blog}
+          key={blog.pid}
+          id={blog.id}
+          image={blog.image}
+          title={blog.title}
+          description={blog.description}
+          category={blog.category}
+          publishDate={blog.publishDate}
+          blog={blog.blog}
         />
       ))}
     </>

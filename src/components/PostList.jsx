@@ -6,11 +6,14 @@ function PostList(props) {
     <>
       {props.posts.map((post) => (
         <Card 
-            key={post.pid}
-            id={post.id}
-            image={post.image}
-            title={post.title}
-            category={post.category}
+        key={post.pid}
+        id={post.id}
+        image={post.image}
+        title={post.title}
+        description={post.description}
+        category={post.category}
+        publishDate={post.publishDate}
+        blog={post.blog}
         />
       ))}
     </>
