@@ -19,7 +19,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/beawriter" element={<Beawriter />} />
         <Route path="/Talktous" element={<Talktous />} />
-        <Route path='/:postId/post' element={<BlogPosts />} />
+        {/* <Route path='/:postId/post' element={<BlogPosts />} /> */}
+        <Route path="/:id/post" element={<BlogPosts />} />
         <Route path='/AllPosts' element={<AllPosts />} />
         <Route path='*' element={<NoPage />} />
       </Routes>

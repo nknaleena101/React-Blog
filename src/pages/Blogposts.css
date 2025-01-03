@@ -27,7 +27,7 @@
 
 .blog-image {
   width: 1040px;
-  height: 500px;
+  height: 800px;
   background-color: aliceblue;
   border-radius: 16px;
   overflow: hidden;
@@ -36,7 +36,8 @@
 }
 .blog-image img{
     object-fit: cover;
-    object-position: 0px -550px;
+    object-position: center;
+    /* object-position: 0px -550px; */
     width: 100%;
     height: 100%;
 }
