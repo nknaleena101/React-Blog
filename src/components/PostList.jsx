@@ -2,9 +2,23 @@ import React from "react";
 import Card from "./Card/Card";
 
 function PostList(props) {
+  const latestPosts = props.posts.slice(-4)
+  
   return (
     <>
-      {props.posts.map((post) => (
+      {latestPosts.map((post) => (
+        <Card 
+        key={post.pid}
+        id={post.pid}
+        image={post.image}
+        title={post.title}
+        description={post.description}
+        category={post.category}
+        publishDate={post.publishDate}
+        blog={post.blog}
+        />
+      ))}
+      {/* {props.posts.map((post) => (
         <Card 
         key={post.pid}
         id={post.id}
@@ -15,7 +29,7 @@ function PostList(props) {
         publishDate={post.publishDate}
         blog={post.blog}
         />
-      ))}
+      ))} */}
     </>
   );
 }
